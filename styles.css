@@ -1,11 +1,11 @@
-*{
-    padding: 0;
-    margin: 0;
-    color: white;
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
 }
 
-body{
-    background-color: #0F2C59 !important;
+body {
+  background-color: #0f2c59 !important;
 }
 /* SAMPLE REJECT APPROVE */
 .sample-reject-pass {
@@ -29,16 +29,13 @@ body{
   padding: 8px 16px;
 }
 label.btn-reject {
-  background-color: #dc3545;
+  background-color: #f53e51;
 }
-label.btn-reject.checked{
-  background-color: #b02a37;
+input[type="radio"]:checked + label {
+  opacity: .8;
 }
 label.btn-approve {
-  background-color: #198754;
-}
-label.btn-approve.checked {
-  background-color: #146c43;
+  background-color: #18a563;
 }
 .form-floating .form-control {
   padding-bottom: 50px !important;
@@ -48,10 +45,10 @@ label.btn-approve.checked {
 .dropdown label {
   color: black;
 }
-.dropdown ul{
+.dropdown ul {
   padding: 10px 20px;
 }
-.dropdown button{
+.dropdown button {
   width: 100%;
 }
 .save-cancel {
@@ -64,4 +61,8 @@ label.btn-approve.checked {
 }
 .with-options {
   margin-bottom: 300px;
+}
+.sample-reject-pass.invalid-feedback-active .dropdown button {
+  /* Outline color for the dropdown button when invalid feedback is active */
+  outline: 2px solid red;
 }
