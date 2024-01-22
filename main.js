@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     approveButton.classList.add("checked");
     dropdown.querySelector(".dropdown-toggle").disabled = true; // Disable the dropdown button
     dropdown.classList.remove("invalid-feedback-active");
+    selectedChoicesContainer.innerHTML = "";
     updateSaveButtonState();
   });
 
